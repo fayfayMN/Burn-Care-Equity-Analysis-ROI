@@ -31,7 +31,7 @@ I engineered the logic to identify "Tele-Burn Hub" candidates by mapping high-vo
 ## 🌐 Interactive Visualizations
 
 > [!TIP]
-> **Explore the Live Dashboard:** [Interactive Burn Care HeatMap](https://mcdonaldlk.github.io/HeatmapHackathon/)
+> **Explore the Live Dashboard:** [Interactive Burn Care HeatMap](https://fayfaymn.github.io/Burn-Care-Equity-Analysis-ROI/)
 
 I engineered the underlying data pipelines and financial logic (documented in `Burn_Care_ROI_Engine.ipynb`) that power the following layers in this dashboard:
 
