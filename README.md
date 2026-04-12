@@ -88,3 +88,8 @@ I engineered the underlying data pipelines and financial logic (documented in `B
 
 ## 🏆 Hackathon Recognition
 Our team (Team 13) was awarded **First Place** for our impactful analysis of geographic disparities. This repository showcases the specific data infrastructure I built to support that winning vision.
+> "19 teams. 90+ participants. One shared belief that better data leads to better care. Here's what our winners discovered:
+
+🥇 First Place: Team 13 Josh Spitzer-Resnick, Emmanuel Fle Chea, MPH, Shreya Pramanik, Feifei Li and Lance Killian McDonald.
+
+Team 13’s submission showcased impactful analysis identifying geographic disparities in burn care access, leveraging integrated data to highlight underserved regions and inform more equitable resource allocation. " — **BData Inc, Official Result Announcement**
