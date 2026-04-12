@@ -1,5 +1,6 @@
 # Burn Care Equity & Economic Impact Analysis
 ### 🥇 1st Place Winner: 2026 HeatMap Hackathon (Team 13)
+**Official Team Repository:** [efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis](https://github.com/efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis)
 
 This repository contains the independent technical architecture and economic impact models I developed for the **1st Place** winning solution at the 2026 HeatMap Hackathon, hosted by BData and the American Burn Association. 
 
