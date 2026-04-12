@@ -1,6 +1,7 @@
+
 # Burn Care Equity & Economic Impact Analysis
 
-This project quantifies the economic and clinical impact of delayed burn care access in the U.S., identifying over $1B in avoidable costs (specifically modeled for **Texas**) and proposing a telemedicine optimization strategy to improve equity and system efficiency.
+This project analyzes geographic disparities in burn care access across the U.S., identifying critical referral gaps and proposing a telemedicine optimization strategy to improve equity and system efficiency.
 
 ---
 
@@ -15,7 +16,7 @@ This repository integrates structural data from the **National Injury Resource D
 
 **Official Team Repository:** [efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis](https://github.com/efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis)
 
-This repository contains the independent technical architecture and economic impact models I developed for the **1st Place** winning solution.
+This repository contains the independent technical architecture I developed for the **1st Place** winning solution.
 
 ---
 
@@ -23,15 +24,18 @@ This repository contains the independent technical architecture and economic imp
 
 ### 1. Referral Network Optimization
 **The Problem:** Burn care is highly specialized. Delays in transferring patients from general trauma centers to ABA-verified burn centers significantly increase mortality rates and healthcare costs.
-* **Our Analysis:** We modeled the **"Referral Gap"** by identifying the **498** Level 1–3 Trauma Centers that lack specialized burn capabilities, pinpointing exactly where the bottlenecks for acute injuries occur in the national pipeline.
+
+**Our Analysis:** We modeled the **"Referral Gap"** by identifying the **498** Level 1–3 Trauma Centers that lack specialized burn capabilities, pinpointing exactly where the bottlenecks for acute injuries occur in the national pipeline.
 
 ### 2. Telemedicine Feasibility & ROI
 **The Problem:** Maintaining a full-scale burn center is not financially or operationally feasible for every region, yet specialized expertise is a universal requirement for patient survival.
-* **Our Analysis:** We identified **351 specific trauma centers** positioned to serve as "Tele-Burn Hubs." By prioritizing these hubs in identified "burn deserts," we maximize the **Return on Investment (ROI)** for healthcare systems while drastically reducing the economic burden of air-transfers.
+
+**Our Analysis:** We identified **351** specific trauma centers positioned to serve as "Tele-Burn Hubs." By prioritizing these hubs in identified "burn deserts," we maximize the impact of telemedicine investment for healthcare systems.
 
 ### 3. Equitable Access to Care
 **The Problem:** Socioeconomic factors and geographic isolation create "hidden" disparities in burn survival rates that state-level data often masks.
-* **Our Analysis:** We pivoted from state-level metrics to a high-resolution analysis of **3,221 U.S. counties** using **population-weighted centroids** (Census 2020). This ensures equity priorities are based on actual human density rather than geographic landmass.
+
+**Our Analysis:** We pivoted from state-level metrics to a high-resolution analysis of **3,221 U.S. counties** using population-weighted centroids (Census 2020). This ensures equity priorities are based on actual human density rather than geographic landmass.
 
 ---
 
@@ -81,6 +85,7 @@ I engineered the underlying data pipelines (documented in `Burn_Care_ROI_Engine.
 * **Tele-Burn Hub Network:** Identified **351** high-priority trauma sites (score ≥ 5) based on trauma level, bed size, and referral gap status.
 * **The Referral Gap:** Modeled the **66% under-referral rate** affecting **498 trauma centers** (88% of all L1–L3 trauma centers lack burn capability).
 * **Geospatial Burdens:** Calculated the 100-mile "Failure Zones" using population-weighted county centroids, identifying states where >50% of residents live beyond 100 miles from a burn center (AK, ND, MT, SD, ID, WY, PR).
+
 ---
 
 ## 🛠️ Tech Stack
@@ -94,12 +99,14 @@ I engineered the underlying data pipelines (documented in `Burn_Care_ROI_Engine.
 ---
 
 ## 📂 Repository Structure
-* `Burn_Care_ROI_Engine.ipynb`: The core engine for financial modeling and state-level data integration.
+
+* `Burn_Care_ROI_Engine.ipynb`: The core engine for data integration and state-level access analysis.
 * `Visualizations`: Interactive maps showing the "Burn Deserts" and the proposed Tele-Burn Hub network.
 
 ---
 
 ## 🏆 Hackathon Recognition
+
 Our team (Team 13) was awarded **First Place** for our impactful analysis of geographic disparities. This repository showcases the specific data infrastructure I built to support that winning vision.
 
 > "19 teams. 90+ participants. One shared belief that better data leads to better care. Here's what our winners discovered:
