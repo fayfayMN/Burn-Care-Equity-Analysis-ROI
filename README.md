@@ -54,7 +54,7 @@ I engineered the underlying data pipelines and financial logic (documented in `B
 ## 📂 Repository Structure
 * `Main_ROI_Analysis.ipynb`: The core engine for financial modeling and state-level data integration.
 * `Geography_of_Survival_Deck.pptx`: My technical proposal and visual storytelling of the data.
-* `Visualizations/`: Interactive maps showing the "Burn Deserts" and the proposed Tele-Burn Hub network.
+* `Visualizations`: Interactive maps showing the "Burn Deserts" and the proposed Tele-Burn Hub network.
 
 ---
 
