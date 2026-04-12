@@ -45,21 +45,29 @@ This repository contains the independent technical architecture and economic imp
 
 ## 🚀 Key Technical Contributions
 
-### 1. The $1.12B Healthcare Burden Model
-I developed a state-level financial impact model based on the *Huang et al. (2021)* under-referral benchmarks.
+### 1. The Referral Gap & Systemic Inefficiencies
 
-* **Insight:** Identified that **Texas (TX)** faces a **$1.12 Billion** annual burden due to delayed specialized care.
-* **Logic:** Modeled the 7% excess infection rate and 66% under-referral rate against state-specific trauma volumes to establish a "conservative floor" for avoidable costs.
+I developed a state-level referral gap analysis based on the NIRD trauma center data.
+
+**Insight:** The national referral gap includes **498 trauma centers** (Level 1–3) that lack specialized burn capabilities. **Texas** has the highest volume of such centers (**38 trauma centers without burn capability**), representing a primary target for telemedicine intervention and referral network optimization.
+
+**Logic:** By mapping the distribution of trauma centers against existing ABA-verified burn centers, we identified where the acute care pipeline is most severely bottlenecked, establishing a data-driven foundation for prioritizing telemedicine hub activation.
 
 ### 2. Telemedicine ROI & Spoke Mapping
-I engineered the logic to identify "Tele-Burn Hub" candidates by mapping high-volume Tier 1 Trauma Centers to existing Burn Center "Anchors."
 
-* **Efficiency Gain:** My model identified a **$305 Million recovery potential** in **California (CA)** through the activation of **49** specific trauma sites as telemedicine spokes.
-* **Granular Analysis:** Performed a comparative study of Illinois vs. California, proving that infrastructure density (number of spokes) must be weighted against population centroids to calculate true ROI.
+I engineered the logic to identify "Tele-Burn Hub" candidates by scoring trauma centers based on trauma level, bed size, and proximity to burn care deserts.
+
+* **High-Priority Hubs:** My model identified **351 high-priority telemedicine sites nationally** (score ≥ 5), representing trauma centers best positioned to serve as telemedicine spokes.
+* **State-Level Targeting:** **California** has the highest number of telemedicine candidates (**49 sites**), followed by Texas (38) and Illinois (26), making these states primary targets for telemedicine network implementation.
+* **Granular Analysis:** By weighting infrastructure density against population centroids, the model prioritizes hubs that maximize geographic coverage and patient access.
+
+**Methodology:** Telemedicine opportunity score = 3 pts (trauma without burn) + 2 pts (Level 1 trauma) + 1.5 pts (Level 2 trauma) + 0.5–1 pt (bed size quartiles).
 
 ### 3. Geospatial Equity Engineering
-* **Distance Burden:** Calculated the "100-Mile Burden" using population-weighted county centroids and Haversine distance.
-* **Vulnerability Correlation:** Integrated CDC Social Vulnerability Index (SVI) data to prove that poverty increases the distance to ABA-verified care.
+
+* **Distance Burden:** Calculated the "100-Mile Burden" for **3,221 U.S. counties** using population-weighted centroids and Haversine distance, identifying states where >50% of counties are beyond 100 miles from a burn center (AK, ND, MT, SD, ID, WY, PR).
+* **Vulnerability Integration:** Integrated CDC Social Vulnerability Index (SVI) data including poverty (EP_POV150), minority status (EP_MINRTY), disability (EP_DISABL), and vehicle access (EP_NOVEH) into the state-level equity framework.
+* **Data Availability:** SVI metrics were merged with access metrics, enabling future correlation analysis between social vulnerability and geographic distance to ABA-verified care.
 
 ---
 
@@ -68,12 +76,11 @@ I engineered the logic to identify "Tele-Burn Hub" candidates by mapping high-vo
 > [!TIP]
 > **Explore the Live Dashboard:** [Interactive Burn Care HeatMap](https://fayfaymn.github.io/Burn-Care-Equity-Analysis-ROI/)
 
-I engineered the underlying data pipelines and financial logic (documented in `Burn_Care_ROI_Engine.ipynb`) that power the following layers in this dashboard:
+I engineered the underlying data pipelines (documented in `Burn_Care_ROI_Engine.ipynb`) that power the following layers in this dashboard:
 
-* **Tele-Burn Hub Network:** Identified **351** optimal trauma sites based on population density and referral radius.
-* **The Referral Gap:** Modeled the **66% under-referral rate** (affecting **498 trauma centers**) that contributes to the $1.12B annual avoidable cost floor.
-* **Geospatial Burdens:** Calculated the 100-mile "Failure Zones" using population-weighted county centroids.
-
+* **Tele-Burn Hub Network:** Identified **351** high-priority trauma sites (score ≥ 5) based on trauma level, bed size, and referral gap status.
+* **The Referral Gap:** Modeled the **66% under-referral rate** affecting **498 trauma centers** (88% of all L1–L3 trauma centers lack burn capability).
+* **Geospatial Burdens:** Calculated the 100-mile "Failure Zones" using population-weighted county centroids, identifying states where >50% of residents live beyond 100 miles from a burn center (AK, ND, MT, SD, ID, WY, PR).
 ---
 
 ## 🛠️ Tech Stack
