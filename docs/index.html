@@ -1,34 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feifei Li | Burn Care ROI Portfolio</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292f; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { border-bottom: 2px solid #af1b3f; padding-bottom: 10px; color: #af1b3f; }
-        .project-card { border: 1px solid #d0d7de; border-radius: 6px; padding: 16px; margin-bottom: 16px; transition: 0.2s; }
-        .project-card:hover { background-color: #f6f8fa; border-color: #af1b3f; }
-        .btn { display: inline-block; background: #af1b3f; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
-        .tag { background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; color: #57606a; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #24292f; max-width: 1200px; margin: 0 auto; padding: 40px 20px; background-color: #f6f8fa; }
+        header { border-bottom: 4px solid #af1b3f; margin-bottom: 30px; padding-bottom: 10px; }
+        h1 { margin: 0; color: #af1b3f; font-size: 2.2em; }
+        .tagline { font-size: 1.1em; color: #57606a; margin-top: 5px; }
+        .section-header { background: #af1b3f; color: white; padding: 12px 20px; border-radius: 6px; margin: 40px 0 20px 0; font-weight: bold; font-size: 1.2em; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        .card { background: white; border: 1px solid #d0d7de; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; transition: all 0.2s ease; border-top: 5px solid #af1b3f; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2); }
+        h3 { margin: 0 0 10px 0; font-size: 1.05em; color: #1f2328; height: 3em; overflow: hidden; }
+        p { font-size: 0.85em; color: #57606a; margin-bottom: 15px; flex-grow: 1; }
+        .btn { display: inline-block; background: #24292f; color: white; padding: 10px 16px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.85em; text-align: center; }
+        .btn:hover { background: #af1b3f; }
+        footer { text-align: center; margin-top: 60px; color: #8c959f; font-size: 0.8em; }
     </style>
 </head>
 <body>
-    <h1>Interactive Health Equity Models</h1>
-    <p><strong>Technical Lead:</strong> Feifei Li <span class="tag">1st Place Winner - HeatMap Hackathon</span></p>
 
-    <div class="project-card">
-        <h3>📍 National ROI & Burn Deserts</h3>
-        <p>Interactive visualization of the $112M annual avoidable cost floor and referral bottlenecks across 498 trauma centers.</p>
-        <a href="National_ROI_Map.html" class="btn">Launch Map</a>
+<header>
+    <h1>Burn Care Health Equity & ROI Hub</h1>
+    <div class="tagline"><strong>Technical Lead:</strong> Feifei Li | Senior Student, Data Science @ Metro State</div>
+</header>
+
+<div class="section-header">📍 Geospatial & Equity Pillars</div>
+<div class="grid">
+    <div class="card">
+        <h3>The Distance Paradox</h3>
+        <p>National analysis proving poverty correlates with increased distance to care.</p>
+        <a href="Analysis_7_5_Distance_to ABA-Verified Care__Paradox.html" class="btn">Launch Map</a>
     </div>
-
-    <div class="project-card">
-        <h3>🏥 California Telemedicine Hubs</h3>
-        <p>Geospatial mapping of 49 high-priority trauma sites and the $305M recovered waste model.</p>
-        <a href="CA_ROI_Map.html" class="btn">Launch Map</a>
+    <div class="card">
+        <h3>National Equity Priority Map</h3>
+        <p>State-level classification of burn care urgency.</p>
+        <a href="Figure 7i-M National Equity Priority Map.html" class="btn">Launch Map</a>
     </div>
+    <div class="card">
+        <h3>Composite Vulnerability Index</h3>
+        <p>Multi-weighted index of social risk and isolation.</p>
+        <a href="Figure_9i_Composite Burn Care Vulnerability Index.html" class="btn">View Index</a>
+    </div>
+    <div class="card">
+        <h3>State SVI Average</h3>
+        <p>Social Demand baseline scores across the US.</p>
+        <a href="Figure_8i_Social Demand (Need) - State SVI Average.html" class="btn">View Map</a>
+    </div>
+    <div class="card">
+        <h3>Population Density vs. Burden</h3>
+        <p>Bivariate mapping of density and travel distance.</p>
+        <a href="Figure10i _Population Density vs. Distance Burden.html" class="btn">View Analysis</a>
+    </div>
+</div>
 
-    <p><small>© 2026 Feifei Li | Data Science @ Metro State</small></p>
+<div class="section-header">💰 Economic Modeling & ROI</div>
+<div class="grid">
+    <div class="card">
+        <h3>The Referral Bottleneck</h3>
+        <p>Visualizing friction points and transfer delays.</p>
+        <a href="Figure_3.5i_The Referral Bottleneck.html" class="btn">View Model</a>
+    </div>
+    <div class="card">
+        <h3>Modeled Impact of Under-Referral</h3>
+        <p>ROI analysis of avoidable costs and volume loss.</p>
+        <a href="Figure_13i_Modeled Impact of Burn Under-Referral.html" class="btn">View ROI Data</a>
+    </div>
+    <div class="card">
+        <h3>The Burn Crisis Narrative</h3>
+        <p>Sequential data-storytelling of healthcare burdens.</p>
+        <a href="Figure_14i_The burn Crisis Narrative.html" class="btn">View Narrative</a>
+    </div>
+</div>
+
+<div class="section-header">📈 Statistical Dashboards</div>
+<div class="grid">
+    <div class="card">
+        <h3>Sensitivity Analysis Dashboard</h3>
+        <p>Validation of model stability across weighting schemes.</p>
+        <a href="Figure_15i_Sensitivity Analysis Dashboard.html" class="btn">Open Dashboard</a>
+    </div>
+    <div class="card">
+        <h3>Equity Quadrant: Access vs. Quality</h3>
+        <p>Scatter analysis of density vs. ABA-verification.</p>
+        <a href="Figure_7i_Scatter.html" class="btn">Open Plot</a>
+    </div>
+</div>
+
+<div class="section-header">📂 Additional Extended Analysis</div>
+<div class="grid">
+    <div class="card"><h3>Regional Access Variance</h3><p>Analysis of local disparities.</p><a href="Figure_1_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>Demographic Delta</h3><p>Impact of census centroids on care access.</p><a href="Figure_2_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>Facility Readiness</h3><p>Burn center vs. non-verified trauma facility ROI.</p><a href="Figure_4_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>Socioeconomic Isolation</h3><p>Deep dive into rural vs. urban access gaps.</p><a href="Figure_5_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>State Policy Impact</h3><p>Model of state-level healthcare policy outcomes.</p><a href="Figure_6_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>Future Trend Projection</h3><p>Burn care demand forecast through 2030.</p><a href="Figure_11_Interactive.html" class="btn">Open File</a></div>
+    <div class="card"><h3>Optimization Hub</h3><p>Optimal site location model for new care centers.</p><a href="Figure_12_Interactive.html" class="btn">Open File</a></div>
+</div>
+
+<footer>
+    <p>© 2026 Feifei Li | HeatMap Hackathon Winner | Burn Care Health Equity Study</p>
+</footer>
+
 </body>
 </html>
