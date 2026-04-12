@@ -1,4 +1,6 @@
 # Burn Care Equity & Economic Impact Analysis
+
+This project quantifies the economic and clinical impact of delayed burn care access in the U.S., identifying over $1B in avoidable costs and proposing a telemedicine optimization strategy to improve equity and system efficiency.
 ---
 
 ## 🔬 Domain Expertise: Burn Care Systems Engineering
