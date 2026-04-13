@@ -112,4 +112,4 @@ Data Sources: NIRD 2023, US Census 2020 (Population Centroids), CDC/ATSDR SVI 20
 - Burn_Care_ROI_Engine.ipynb: Core engine for data integration, referral gap analysis, 
   telemedicine scoring, distance burden computation, and economic impact modeling.
 - Visualizations: Interactive maps showing burn deserts and the proposed Tele-Burn Hub 
-  network.  [https://fayfaymn.github.io/Burn-Care-Equity-Analysis-ROI/](url)
+  network.  [https://fayfaymn.github.io/Burn-Care-Equity-Analysis-ROI/](https://fayfaymn.github.io/Burn-Care-Equity-Analysis-ROI/))
