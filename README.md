@@ -4,11 +4,11 @@ identifying critical referral gaps and proposing a telemedicine optimization str
 to improve equity and system efficiency.
 
 🥇 1st Place Winner: 2026 HeatMap Hackathon (Team 13)
-"Team 13's submission showcased impactful analysis identifying geographic disparities 
+>"Team 13's submission showcased impactful analysis identifying geographic disparities 
 in burn care access, leveraging integrated data to highlight underserved regions and 
 inform more equitable resource allocation." — BData Inc, Official Result Announcement
 
-Official Team Repository: efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis
+Official Team Repository:[ efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis](efchea1/HeatMap_Burn_2026_Hackathon_Burn_Care_Access_Analysis)
 
 This repository contains the independent technical architecture I developed for the 
 1st Place winning solution.
